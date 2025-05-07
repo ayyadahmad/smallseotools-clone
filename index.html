@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100% Free SEO Tools - SmallSEOTools.com Clone</title>
+    <meta name="description" content="A complete set of free SEO and online utility tools">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="font-[Roboto] bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="/" class="text-2xl font-bold text-blue-600">SmallSEOTools</a>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#text-tools" class="text-gray-600 hover:text-blue-600">Text Analysis Tools</a>
+                    <a href="#ai-tools" class="text-gray-600 hover:text-blue-600">AI Writing Tools</a>
+                    <a href="#image-tools" class="text-gray-600 hover:text-blue-600">Image Tools</a>
+                    <a href="#seo-tools" class="text-gray-600 hover:text-blue-600">SEO Tools</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden text-gray-600 hover:text-blue-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+
+                <!-- Language Selector -->
+                <div class="hidden md:flex items-center">
+                    <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2">
+                        <option value="en">English - EN</option>
+                        <option value="ru">русский - RU</option>
+                        <option value="es">Español - ES</option>
+                        <option value="ja">日本語 - JA</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="hidden fixed inset-0 bg-gray-800 bg-opacity-75 z-40" id="mobile-menu">
+        <div class="bg-white h-full w-64 p-4">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-xl font-bold">Menu</h2>
+                <button class="text-gray-600" id="close-menu">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <nav class="flex flex-col space-y-4">
+                <a href="#text-tools" class="text-gray-600 hover:text-blue-600">Text Analysis Tools</a>
+                <a href="#ai-tools" class="text-gray-600 hover:text-blue-600">AI Writing Tools</a>
+                <a href="#image-tools" class="text-gray-600 hover:text-blue-600">Image Tools</a>
+                <a href="#seo-tools" class="text-gray-600 hover:text-blue-600">SEO Tools</a>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="mt-16">
+        <!-- Hero Section -->
+        <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+            <div class="container mx-auto px-4 text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">100% Free SEO Tools</h1>
+                <p class="text-xl mb-8">Your all-in-one toolkit for text analysis, plagiarism checking, grammar correction and more.</p>
+                <a href="#tools" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+                    Explore Tools
+                </a>
+            </div>
+        </section>
+
+        <!-- Text Analysis Tools Section -->
+        <section id="text-tools" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Text Analysis Tools</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Tool Card -->
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                        <i class="fas fa-search text-blue-600 text-3xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Plagiarism Checker</h3>
+                        <p class="text-gray-600">Check your content for plagiarism with our advanced detection system.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 mt-4 inline-block">Learn More →</a>
+                    </div>
+
+                    <!-- Tool Card -->
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                        <i class="fas fa-pen text-blue-600 text-3xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Article Rewriter</h3>
+                        <p class="text-gray-600">Rewrite your articles with AI-powered technology for unique content.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 mt-4 inline-block">Learn More →</a>
+                    </div>
+
+                    <!-- Tool Card -->
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                        <i class="fas fa-spell-check text-blue-600 text-3xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Grammar Checker</h3>
+                        <p class="text-gray-600">Improve your writing with our advanced grammar checking tool.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 mt-4 inline-block">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Writing Tools Section -->
+        <section id="ai-tools" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">AI Writing Tools</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Tool Card -->
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                        <i class="fas fa-robot text-blue-600 text-3xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">AI Writer</h3>
+                        <p class="text-gray-600">Generate high-quality content with our AI-powered writing assistant.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 mt-4 inline-block">Learn More →</a>
+                    </div>
+
+                    <!-- Tool Card -->
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                        <i class="fas fa-paragraph text-blue-600 text-3xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Paragraph Generator</h3>
+                        <p class="text-gray-600">Create unique paragraphs instantly with AI technology.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 mt-4 inline-block">Learn More →</a>
+                    </div>
+
+                    <!-- Tool Card -->
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                        <i class="fas fa-book text-blue-600 text-3xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Essay Writer</h3>
+                        <p class="text-gray-600">Generate well-structured essays on any topic with AI assistance.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 mt-4 inline-block">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Tools Section -->
+        <section id="image-tools" class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Image Tools</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Tool Card -->
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                        <i class="fas fa-image text-blue-600 text-3xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Image Compressor</h3>
+                        <p class="text-gray-600">Compress your images without losing quality.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 mt-4 inline-block">Learn More →</a>
+                    </div>
+
+                    <!-- Tool Card -->
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                        <i class="fas fa-crop text-blue-600 text-3xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Image Resizer</h3>
+                        <p class="text-gray-600">Resize your images to any dimension quickly and easily.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 mt-4 inline-block">Learn More →</a>
+                    </div>
+
+                    <!-- Tool Card -->
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                        <i class="fas fa-search text-blue-600 text-3xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Reverse Image Search</h3>
+                        <p class="text-gray-600">Find similar images across the web.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 mt-4 inline-block">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEO Tools Section -->
+        <section id="seo-tools" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">SEO Tools</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Tool Card -->
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                        <i class="fas fa-chart-line text-blue-600 text-3xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Website SEO Score</h3>
+                        <p class="text-gray-600">Analyze your website's SEO performance with our comprehensive checker.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 mt-4 inline-block">Learn More →</a>
+                    </div>
+
+                    <!-- Tool Card -->
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                        <i class="fas fa-link text-blue-600 text-3xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Backlink Checker</h3>
+                        <p class="text-gray-600">Check and analyze your website's backlink profile.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 mt-4 inline-block">Learn More →</a>
+                    </div>
+
+                    <!-- Tool Card -->
+                    <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition duration-300">
+                        <i class="fas fa-key text-blue-600 text-3xl mb-4"></i>
+                        <h3 class="text-xl font-semibold mb-2">Keyword Position</h3>
+                        <p class="text-gray-600">Track your keyword rankings in search engine results.</p>
+                        <a href="#" class="text-blue-600 hover:text-blue-800 mt-4 inline-block">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-800 text-white py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Company Info -->
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">SmallSEOTools</h3>
+                        <p class="text-gray-400">438, Streatham High Road<br>London, UK.<br>SW16 3PX</p>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Contact Us</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Privacy Policy</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Terms of Service</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Popular Tools -->
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Popular Tools</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white">Plagiarism Checker</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Grammar Checker</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Word Counter</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white">Paraphrasing Tool</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Newsletter -->
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Newsletter</h3>
+                        <p class="text-gray-400 mb-4">Subscribe to our newsletter for updates</p>
+                        <form class="flex">
+                            <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-2 rounded-l-lg focus:outline-none">
+                            <button class="bg-blue-600 text-white px-4 py-2 rounded-r-lg hover:bg-blue-700">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Copyright -->
+                <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                    <p class="text-gray-400">© 2024 SmallSEOTools Clone. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
